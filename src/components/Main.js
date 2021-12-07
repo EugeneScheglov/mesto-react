@@ -35,7 +35,6 @@ function Main({ handleEditAvatarClick, handleEditProfileClick, handleAddPlaceCli
 
 
     return (
-    <>
         <main>
             <section className="profile">
                 <div className="profile__content">
@@ -73,7 +72,6 @@ function Main({ handleEditAvatarClick, handleEditProfileClick, handleAddPlaceCli
             {cards.map(card => <Card key={card._id} card={card} onCardClick={onCardClick} />)}
             </section>
         </main>
-    </>
     )
   }
   

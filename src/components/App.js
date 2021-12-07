@@ -71,14 +71,15 @@ function App() {
             title="Редактировать профиль" 
             onEditProfile={handleEditProfileClick} 
             onClose={closeAllPopups} 
-            isOpened={isEditProfilePopupOpen}
+            isOpen={isEditProfilePopupOpen}
+            nameForm="profile"
             >
             <label className="popup__form-field">
-                <input type="text" placeholder="Имя" className="popup__text popup__text_name" name="userName" minlength="2" maxlength="40" required id="name"/>
+                <input type="text" placeholder="Имя" className="popup__text popup__text_name" name="userName" minLength="2" maxLength="40" required id="name"/>
                 <span id="name-error" className="error"></span>
             </label>
             <label className="popup__form-field">
-                <input type="text" placeholder="Профессия" className="popup__text popup__text_job" name="userAbout" minlength="2" maxlength="200" required id="job"/>
+                <input type="text" placeholder="Профессия" className="popup__text popup__text_job" name="userAbout" minLength="2" maxLength="200" required id="job"/>
                 <span id="job-error" className="error"></span>
             </label>
         </PopupWithForm>
@@ -88,7 +89,8 @@ function App() {
             title="Обновить аватар" 
             onEditProfile={handleEditAvatarClick} 
             onClose={closeAllPopups} 
-            isOpened={isEditAvatarPopupOpen}
+            isOpen={isEditAvatarPopupOpen}
+            nameForm="avatar"
             >
             <label className="popup__form-field">
                 <input type="url" placeholder="Ссылка" className="popup__text popup__text_avatar" name="userAvatar" required id="avatar"/>
@@ -101,10 +103,11 @@ function App() {
             title="Новое Место" 
             onEditProfile={handleAddPlaceClick} 
             onClose={closeAllPopups} 
-            isOpened={isAddPlacePopupOpen}
+            isOpen={isAddPlacePopupOpen}
+            nameForm="create"
             >
             <label className="popup__form-field">
-                <input type="text" placeholder="Название" className="popup__text popup__text_place" name="name" minlength="2" maxlength="30" required id="place" />
+                <input type="text" placeholder="Название" className="popup__text popup__text_place" name="name" minLength="2" maxLength="30" required id="place" />
                 <span id="place-error" className="error"></span>
             </label>
             <label className="popup__form-field">
@@ -113,7 +116,7 @@ function App() {
             </label>
         </PopupWithForm>
 
-        <div className="popup popup_delete">
+        {/* <div className="popup popup_delete">
             <div className="popup__position">
                 <button className="popup__close popup__close_delete" type="button"></button>
                 <div className="popup__container popup__container_delete">
@@ -123,7 +126,7 @@ function App() {
                     </form>
                 </div>
             </div>
-        </div>
+        </div> */}
 
         </div>
 
