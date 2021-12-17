@@ -27,45 +27,37 @@ class Api {
             .then(this._checkResponse)
     }
 
-    setUserInfo(userData) {
+    setUserInfo(data) {
         return fetch(this._url + '/users/me', {
                 method: 'PATCH',
                 headers: this._headers,
                 body: JSON.stringify({
-                    name: userData.userName,
-                    about: userData.userAbout
+                    name: data.name,
+                    about: data.about
                 })
             })
             .then(this._checkResponse)
     }
 
-    updateCards(name, link) {
+    updateCards(data) {
         return fetch(this._url + '/cards', {
                 method: 'POST',
                 headers: this._headers,
                 body: JSON.stringify({
-                    name: name,
-                    link: link
+                    name: data.name,
+                    link: data.link
                 })
             })
             .then(this._checkResponse)
     }
 
-    like(id) {
+    changeLikeCardStatus(id, isLiked) {
         return fetch(this._url + `/cards/likes/${id}`, {
-                method: 'PUT',
-                headers: this._headers
-            })
-            .then(this._checkResponse)
-    }
-
-    dislike(id) {
-        return fetch(this._url + `/cards/likes/${id}`, {
-                method: 'DELETE',
-                headers: this._headers
-            })
-            .then(this._checkResponse)
-    }
+          method: `${isLiked ? 'PUT' : 'DELETE'}`,
+          headers: this._headers
+        })
+        .then(this._checkResponse)
+      }
 
     removeCard(id) {
         return fetch(this._url + `/cards/${id}`, {
@@ -76,12 +68,12 @@ class Api {
             .then(this._checkResponse)
     }
 
-    handleUserAvatar(data) {
+    setUserAvatar(data) {
         return fetch(this._url + `/users/me/avatar`, {
                 method: 'PATCH',
                 headers: this._headers,
                 body: JSON.stringify({
-                    avatar: data.userAvatar,
+                    avatar: data.avatar,
                 })
             })
             .then(this._checkResponse)
