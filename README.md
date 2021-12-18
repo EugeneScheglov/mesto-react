@@ -28,6 +28,24 @@
 __[GitHub]__ — [Project](https://github.com/EugeneScheglov/mesto-react)
 <br />
 __[DEPLOY]__ — SOON
+<br />
+__[Figma]__ — [Link](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+---
+
+### Инструкция по развертыванию
+#### `npm start`
+
+Запустит проект в режиме разработки.
+<br />
+Для просмотра [откройте](http://localhost:3000) в браузере.
+
+#### `npm run build`
+
+Соберет проект в папку `build` для продакшена.
+<br />
+Сборка минифицирована, имена файлов хэшированы.
+<br />
+Проект готов к деплою.
 
 ---
 
