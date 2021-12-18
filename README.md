@@ -37,7 +37,7 @@ __[Figma]__ — [Link](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScr
 
 Запустит проект в режиме разработки.
 <br />
-Для просмотра [откройте](http://localhost:3000) в браузере.
+Для просмотра [откройте](http://localhost:3000) в браузере, если не открылся сам после `npm start`.
 
 #### `npm run build`
 
