@@ -25,7 +25,10 @@
 
 **ссылки на проект**
 
-__[GitHub]__ (https://github.com/EugeneScheglov/mesto-react) Project
+__[GitHub]__(https://github.com/EugeneScheglov/mesto-react)
+<br />
 __[DEPLOY]__ soon
+
+---
 
 ![about-russia-travel](https://user-images.githubusercontent.com/83172101/126880813-9febd987-56c5-4432-9cc9-d2ad0e27485d.jpg)
