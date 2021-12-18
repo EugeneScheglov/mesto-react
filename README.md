@@ -2,6 +2,7 @@
 
 ### Введение
 В данном проекте мы портировали проект [Место](https://github.com/EugeneScheglov/mesto) на React.
+Здесь [Deploy](https://eugenescheglov.github.io/mesto/) проекта.
 
 **О проекте**
 * HTML5
