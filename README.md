@@ -25,9 +25,9 @@
 
 **ссылки на проект**
 
-__[GitHub]__(https://github.com/EugeneScheglov/mesto-react)
+__[GitHub](https://github.com/EugeneScheglov/mesto-react)
 <br />
-__[DEPLOY]__ soon
+__[DEPLOY] soon
 
 ---
 
