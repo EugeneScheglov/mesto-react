@@ -23,7 +23,7 @@
 
 ---
 
-**ссылки на проект**
+### ссылки на проект
 
 __[GitHub]__ — [Project](https://github.com/EugeneScheglov/mesto-react)
 <br />
