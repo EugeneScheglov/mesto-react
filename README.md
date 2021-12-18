@@ -48,4 +48,4 @@ __[Figma]__ — [Link](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScr
 
 ---
 
-![about-russia-travel](https://habrastorage.org/getpro/freelansim/allfiles/68/688/688341/00c7ffec16.jpg)
+![mesto-react](https://habrastorage.org/getpro/freelansim/allfiles/68/688/688341/00c7ffec16.jpg)
