@@ -3,11 +3,11 @@
 ### Введение
 В данном проекте мы портировали проект [Место](https://github.com/EugeneScheglov/mesto) на React.
 <br />
-Здесь [Deploy](https://eugenescheglov.github.io/mesto/) проекта **Mesto.
+Здесь [Deploy](https://eugenescheglov.github.io/mesto/) проекта **Mesto**.
 
 ---
 
-**О проекте
+**О проекте**
 * HTML5
 * CCS3
 * Методология БЭМ
