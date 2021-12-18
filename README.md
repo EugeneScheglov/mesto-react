@@ -23,11 +23,11 @@
 
 ### ссылки на проект
 
-__[GitHub] — [Project](https://github.com/EugeneScheglov/mesto-react)
+__[GitHub]__ — [Project](https://github.com/EugeneScheglov/mesto-react)
 <br />
-__[DEPLOY] — SOON
+__[DEPLOY]__ — SOON
 <br />
-__[Figma] — [Link](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
+__[Figma]__ — [Link](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
 
 ---
 
