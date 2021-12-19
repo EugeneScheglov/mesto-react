@@ -1,44 +1,51 @@
 import React from "react";
 import PopupWithForm from "./PopupWithForm";
 
-function EditAvatarPopup({onClose, isOpen, handleEditAvatarClick, onUpdateAvatar}) {
-  const inputRef= React.useRef()
+function EditAvatarPopup({
+  onClose,
+  isOpen,
+  handleEditAvatarClick,
+  onUpdateAvatar,
+}) {
+  const avatarRef = React.useRef("");
 
-    function handleSubmit(e) {
-        e.preventDefault();
-        
-        onUpdateAvatar({
-          avatar: inputRef.current.value,
-        });
-        inputRef.current.value = ''
-      }
+  React.useEffect(() => {
+    avatarRef.current.value = "";
+  }, [isOpen]);
 
-    return (
-    <PopupWithForm 
-        name="avatar" 
-        title="Обновить аватар" 
-        onEditProfile={handleEditAvatarClick} 
-        onClose={onClose} 
-        isOpen={isOpen} 
-        onSubmit={handleSubmit} 
-        nameForm="avatar"
-        >
-        <label className="popup__form-field">
+  function handleSubmit(e) {
+    e.preventDefault();
+    onUpdateAvatar({
+      avatar: avatarRef.current.value,
+    });
+  }
 
-            <input 
-            type="url" 
-            placeholder="Ссылка" 
-            className="popup__text popup__text_avatar" 
-            name="userAvatar" 
-            required 
-            id="avatar"
-            ref={inputRef}
-            />
+  return (
+    <PopupWithForm
+      className="popup_avatar"
+      title="Обновить аватар"
+      onEditProfile={handleEditAvatarClick}
+      onClose={onClose}
+      isOpen={isOpen}
+      onSubmit={handleSubmit}
+      nameForm="avatar"
+      buttonTitle="Сохранить"
+    >
+      <label className="popup__form-field">
+        <input
+          type="url"
+          placeholder="Ссылка"
+          className="popup__text popup__text_avatar"
+          name="userAvatar"
+          required
+          id="avatar"
+          ref={avatarRef}
+        />
 
-            <span id="avatar-error" className="error" />
-        </label>
+        <span id="avatar-error" className="error" />
+      </label>
     </PopupWithForm>
-    )
+  );
 }
 
 export default EditAvatarPopup;
