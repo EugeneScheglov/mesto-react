@@ -25,7 +25,7 @@
 
 __[GitHub]__ — [Project](https://github.com/EugeneScheglov/mesto-react)
 <br />
-__[Deploy]__ — [mesto-react link](https://eugenescheglov.github.io/mesto-react/)
+__[Deploy]__ — [mesto-react](https://eugenescheglov.github.io/mesto-react/)
 <br />
 __[Figma]__ — [Link](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1)
 
